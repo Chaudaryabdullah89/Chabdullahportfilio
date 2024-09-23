@@ -35,42 +35,44 @@
       </style>
 </head>
 
-<body class=" scroll-smooth">
+<!-- Start of Selection -->
+<body class=" scroll-smooth animate">
+<!-- End of Selection -->
     <div class="minicircle">
 
     </div>
-    <div class="">
+    <div class="scroll-smooth">
         <!-- nav Starting -->
         <nav
             class="flex justify-between items-center py-5 px-4 md:px-10 mx-auto fixed top-0 w-full z-1000 backdrop-blur-md border-b-2 border-gray-100">
             <!-- logo -->
             <div class="logo">
-                <img src="./img/logo.png.webp" alt="">
+                <a href="/"><img src="./img/logo.png.webp" alt=""></a>
             </div>
             <!-- nav links -->
             <ul
                 class="hidden md:flex gap-4 lg:gap-10 rounded-full px-4 lg:px-8 py-2 lg:py-5 text-[14px] lg:text-[18px] backdrop-blur-md border-2 border-gray-100">
                 <li>
-                    <a href="/">Home</a>
+                    <a href="#Home">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#About">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#Services">Services</a>
                 </li>
                 <li>
-                    <a href="">My Work</a>
+                    <a href="#Work">My Work</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="#Contact">Contact Us</a>
                 </li>
             </ul>
             <div class="flex items-center">
                 <!-- contact button -->
                 <button
                     class="hidden lg:block border border-gray-400 px-5 py-3 rounded-[50px] hover:bg-black hover:text-white transition-all duration-300 lg:px-8 py-2 lg:py-5">
-                    <a href="">Contact Us <i class="ri-arrow-right-up-line"></i></a>
+                    <a href="#Contact">Contact Us <i class="ri-arrow-right-up-line"></i></a>
                 </button>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAA6CAYAAAATBx+NAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFxSURBVHgB7dsxTsNAEAXQv+uGLnZva30DzA3S0nEEOAHhBByFIxBXlJCODko6OMKWVDYztlGUKJHsZpWN/5McWZGlRJPJWNrvNRClaNv2SU4rOVLQ2hjz8CPMUJwPsDD7vBTpKlksFv+dQ7su5KiMc64FHeOtvoCOSbVAn6CDZDbXVgbRHdhFh3hr7cp2tzKZ1vLGGqS0Wd60JlobEBERERERERER0ZZBQJrBNU1zL6t1tzjtHG4bHCKQIaB81VPEoQsOLQKRzlkhnuKoVOP4YAWSX+MS8amCFQiRZv8hO6hGZOQvtgk5pNPhKZISceif7kAg3vvfLMtqKVImH1yif3riFGlw+C7f8ZrBIRERERERERER0Z5JS655ni+TJHmU0yXO2/TgsCiKG2vtM+Zj2pq0rCe/YF7bNvsdh2OuHGLjb8yPDxkcxigdPYOcc9pBJWak23E49mKd6piXbsfh6CEtwd+XDOoN+i4qcb52gsM/Qd5yAPo6248AAAAASUVORK5CYII="
                     alt="Menu" class="w-7 block md:hidden cursor-pointer" onclick="toggleMenu()">
@@ -83,17 +85,17 @@
                 <button class="text-4xl font-bold text-gray-700 hover:text-gray-900 transition-colors duration-300 z-60"
                     onclick="toggleMenu()">&times;</button>
             </div>
-            <a href="/"
+            <a href="#Home"
                 class="block py-3 w-full text-center text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-300">Home</a>
-            <a href="#"
+            <a href="#About"
                 class="block py-3 w-full text-center text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-300">About
                 Us</a>
-            <a href="#"
+            <a href="#Services"
                 class="block py-3 w-full text-center text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-300">Services</a>
-            <a href=""
+            <a href="#Work"
                 class="block py-3 w-full text-center text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-300">My
                 Work</a>
-            <a href="#"
+            <a href="#Contact"
                 class="block py-3 w-full text-center text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-300">Contact
                 Us</a>
         </div>
@@ -101,21 +103,21 @@
         <!-- Hero section starting -->
         <div>
         </div>
-        <div class="main container mx-auto  px-4">
+        <div class= " scroll-smooth main container mx-auto  px-4" id="Home">
             <div class="flex flex-col justify-center items-center h-screen w-full  mx-auto leading-loose pt-[0px]">
                 <img src="./img/standing.jpg"
                     class="rounded-[50%] w-[120px] md:w-[180px] h-[120px] md:h-[180px] object-cover" alt="">
-                <h2 class="text-center text-xl md:text-2xl pt-2 ">Hi! I'm Ch Abdullah </h2>
-                <h1 class="text-center text-4xl md:text-6xl w-full md:w-[700px] py-5 font-ovo-regular a">Frontend Web
+                <h2 class="text-center text-xl md:text-2xl pt-2 animation-left">Hi! I'm Ch Abdullah </h2>
+                <h1 class="text-center text-4xl md:text-6xl w-full md:w-[700px] py-5 font-ovo-regular a animate-translate ">Frontend Web
                     Developer Based in Pakistan</h1>
-                <p class="text-center w-full md:w-[600px] font-ovo-regular a">I am a passionate and dedicated front-end
+                <p class="text-center w-full md:w-[600px] font-ovo-regular a animate-translate">I am a passionate and dedicated front-end
                     web developer. With a keen eye for design and a deep understanding of the latest web technologies. I
                     strive to create engaging and user-friendly websites.</p>
                 <div class="py-6 flex md:flex-row gap-6">
                     <!-- contact buttons -->
                     <button
                         class="border border-gray-400 px-5 py-3 rounded-[50px] hover:bg-black hover:text-white transition-all duration-300">
-                        <a href="">Contact me <i class="ri-arrow-right-line"></i></a>
+                        <a href="#Contact">Contact me <i class="ri-arrow-right-line"></i></a>
                     </button>
                     <button
                         class="border border-gray-400 px-5 py-3 rounded-[50px] hover:bg-black hover:text-white transition-all duration-300">
@@ -128,7 +130,7 @@
 
         <!-- About section starting -->
 
-        <div class=" p-4  scroll-m-10  ">
+        <div class=" scroll-smooth p-4  scroll-m-10  " id="About">
 
             <div class="flex flex-col justify-center items-center mt-[100px] leading-loose pb-8">
                 <h2 class="text-2xl font-ovo-regular">Introduction</h2>
@@ -209,7 +211,7 @@
         <!-- about section ending -->
         <!-- My services section -->
 
-        <div class="flex flex-col items-center gap-2">
+        <div class=" scroll-smooth flex flex-col items-center gap-2" id="Services">
             <div class="flex flex-col items-center gap-2 leading-loose px-4 pt-3 md:px-0">
                 <h2 class="text-2xl text-center">What I Offer</h2>
                 <h2 class="text-4xl md:text-6xl text-center">My Services</h2>
@@ -262,7 +264,7 @@
 
             <!-- My work section starts -->
 
-            <div class="flex  flex-col items-center gap-2">
+            <div class="flex  scroll-smooth flex-col items-center gap-2" id="Work">
                 <div class="flex flex-col items-center gap-2 leading-loose px-4 md:px-0">
                     <h2 class="text-2xl text-center md:text-3xl">My portfolio</h2>
                     <h2 class="text-4xl text-center md:text-6xl">My latest work</h2>
@@ -343,7 +345,7 @@
 
             <!-- contact section starts -->
 
-            <div class="flex flex-col items-center gap-2 pt-16 px-4 md:px-0">
+            <div class="flex scroll-smooth flex-col items-center gap-2 pt-16 px-4 md:px-0" id="Contact">
                 <div class="flex flex-col items-center gap-2 leading-loose text-center">
                     <h2 class="text-2xl md:text-3xl">Connect with me</h2>
                     <h2 class="text-4xl md:text-6xl">Get in touch</h2>
@@ -353,15 +355,17 @@
                     </p>
                 </div>
                 <div class="w-full max-w-[610px]">
-                    <form action="" class="flex flex-col gap-5">
+                    <form action="https://formsubmit.co/chaudaryabdullah899@gmail.com" method="POST" class="flex flex-col gap-5">
                         <div class="flex flex-col md:flex-row items-center gap-2">
-                            <input type="text" placeholder="Name"
+                            <input type="text" name="Name" placeholder="Name"
                                 class="w-full h-[50px] border border-gray-300 rounded-lg p-2 outline-none">
-                            <input type="email" placeholder="Email"
+                            <input type="email" name="Email" placeholder="Email"
                                 class="w-full h-[50px] border border-gray-300 rounded-lg p-2 outline-none">
                         </div>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"
                             class="w-full h-[200px] border border-gray-300 rounded-lg p-2 pt-10 outline-none"></textarea>
+                            <input type="hidden" name="_autoresponse" value="Thanks For Contacting Us Our Time Will Contact You Within 24 to 48 hours">
+                            <input type="hidden" name="_template" value="table">
                         <button
                             class="w-full max-w-[170px] cursor-pointer h-[50px] bg-black text-white rounded-[50px]">Submit</button>
                     </form>
@@ -386,45 +390,52 @@
             </div>
 
 
+
             <!-- Here is our scripts -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-            <script>
-                function circlemoving() {
-                    var xscale = 1;
-                    var yscale = 1;
-                    var xprev = 0;
-                    var yprev = 0;
-                    var timeout;
-
-                    window.addEventListener('mousemove', function (dets) {
-                        if (dets.clientY > window.innerHeight) return;
-
-                        clearTimeout(timeout);
-
-                        var xdiff = dets.clientX - xprev;
-                        var ydiff = dets.clientY - yprev;
-
-                        xprev = dets.clientX;
-                        yprev = dets.clientY;
-
-                        let xscale = gsap.utils.clamp(.8, 1.2, xdiff);
-                        let yscale = gsap.utils.clamp(.8, 1.2, ydiff);
-
-                        circlemousefollower(xscale, yscale);
-
-                        timeout = setTimeout((e) => {
-                            let minicircle = document.getElementsByClassName('minicircle')[0];
-                            if (minicircle) {
-                                minicircle.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1,1)`;
-                                minicircle.style.display = 'unset';
-                            }
-                        }, 100);
-                        console.log(xscale, dets.clientX, yscale, dets.clientY);
-                    });
-                }
-                circlemoving()
-
-            </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector('.head')
+    const elementsLeft = document.querySelectorAll(".animation-left");
+    const elementsRight = document.querySelectorAll(".animation-right");
+    const elemnt = document.querySelector(".accouncment-bar")
+    
+    let lastScrollY = window.scrollY;
+    
+    window.addEventListener("scroll", function() {
+    if (window.scrollY > lastScrollY) {
+      // Scrolling down
+      header.classList.add("fixed");
+      header.classList.remove("not-fixed");
+      elemnt.classList.add('none')
+    } else {
+      // Scrolling up
+      header.classList.remove("fixed");
+      header.classList.add("not-fixed");
+      elemnt.classList.remove('none')
+    }
+    lastScrollY = window.scrollY;
+    });
+    
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    entry.target.classList.add('visible');
+    header.classList.remove("not-fixed");
+    } else {
+    entry.target.classList.remove('visible');
+    header.classList.add("not-fixed");
+    }
+    });
+    }, { threshold: 0.1 });
+    
+    elementsLeft.forEach(element => {
+    observer.observe(element);
+    });
+    
+    elementsRight.forEach(element => {
+    observer.observe(element);
+    });
+    });</script>
 </body>
-
 </html>
