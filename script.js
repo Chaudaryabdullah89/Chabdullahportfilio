@@ -84,28 +84,7 @@ elementsLeft.forEach(element => {
 elementsRight.forEach(element => {
     observer.observe(element);
 });
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-    
-        const targetSection = document.querySelector(this.getAttribute('href'));
 
-        
-        window.scrollTo({
-            top: targetSection.offsetTop - 50, 
-            behavior: 'smooth' 
-        });
-    });
-});
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function(e) {
-e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({
-behavior: 'smooth'
-});
-});
-});
 
 document.addEventListener("DOMContentLoaded", function() {
 const header = document.querySelector('.head')
