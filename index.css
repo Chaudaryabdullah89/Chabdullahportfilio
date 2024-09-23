@@ -92,3 +92,82 @@
 body{
     overflow-x: hidden;
 }
+
+.little-contact-info {
+    display: flex;
+    margin: 0px auto;
+    padding-top: 100px;
+    justify-content: center;
+    gap: 100px;
+
+
+    max-width: 1300px;
+
+}
+
+.contact-delts {
+    width: 25vw;
+}
+
+.info {
+    width: 30vw;
+}
+
+.info h1,
+h3 {
+    padding-bottom: 30px;
+font-size: 24px;
+    font-family: "Rufina", serif;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+}
+
+.info p {
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+color: black;
+}
+
+.contact-delts h1 {
+    font-size: 35px;
+    padding-bottom: 50px;
+
+}
+
+.contact-delts h4:nth-child(2) {
+    font-size: 21px;
+    font-weight: 600;
+    color: grey;
+    padding-bottom: 25px;
+    font-family: "Rubik", sans-serif;
+}
+
+.contact-delts h4:nth-child(1) {
+    font-size: 18px;
+
+}
+.contact-section{
+width: 100%;
+margin-top: 100px;
+    background-repeat: no-repeat;
+    background-image: url(https://preview.colorlib.com/theme/personalportfolio/assets/img/gallery/section_bg02.jpg.webp);
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 400px;
+    /* padding: 0px 200px; */
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-bottom: 170px;
+
+}
+.contact-container h1{
+    font-size: 45px;
+    color: #616161;
+}
+
