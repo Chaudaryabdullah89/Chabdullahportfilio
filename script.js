@@ -48,6 +48,14 @@ function mousemoving(){
 circlemousefollower();
 function toggleMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
+    const menuItems = document.querySelectorAll('.menu a'); 
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+      
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+        });
+    });
     if (mobileMenu.classList.contains('translate-x-full')) {
         mobileMenu.classList.remove('translate-x-full');
         mobileMenu.classList.add('translate-x-0');
