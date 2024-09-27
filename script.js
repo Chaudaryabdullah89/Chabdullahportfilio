@@ -1,4 +1,5 @@
 console.log('Thanks For Visiting My Portfilio Feel Free Too Report any Bug')
+
 const elementsLeft = document.querySelectorAll(".animation-left");
 const elementsRight = document.querySelectorAll(".animation-right");
 
