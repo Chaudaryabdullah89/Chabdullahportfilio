@@ -1,4 +1,3 @@
-
 const elementsLeft = document.querySelectorAll(".animation-left");
 const elementsRight = document.querySelectorAll(".animation-right");
 
@@ -64,79 +63,8 @@ function toggleMenu() {
         mobileMenu.classList.add('translate-x-full');
     }
 }
-// script.js
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-       
-        } else {
-            entry.target.classList.remove('visible');
-    
-        }
-    });
-}, { threshold: 0.1 });
-
-elementsLeft.forEach(element => {
-    observer.observe(element);
-});
-
-elementsRight.forEach(element => {
-    observer.observe(element);
-});
 
 
-document.addEventListener("DOMContentLoaded", function() {
-const header = document.querySelector('.head')
-const elementsLeft = document.querySelectorAll(".animation-left");
-const elementsRight = document.querySelectorAll(".animation-right");
-const elemnt = document.querySelector(".accouncment-bar")
-
-let lastScrollY = window.scrollY;
-
-window.addEventListener("scroll", function() {
-if (window.scrollY > lastScrollY) {
-  // Scrolling down
-  header.classList.add("fixed");
-  header.classList.remove("not-fixed");
-  elemnt.classList.add('none')
-} else {
-  // Scrolling up
-  header.classList.remove("fixed");
-  header.classList.add("not-fixed");
-  elemnt.classList.remove('none')
-}
-lastScrollY = window.scrollY;
-});
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if (entry.isIntersecting) {
-entry.target.classList.add('visible');
-header.classList.remove("not-fixed");
-} else {
-entry.target.classList.remove('visible');
-header.classList.add("not-fixed");
-}
-});
-}, { threshold: 0.1 });
-
-elementsLeft.forEach(element => {
-observer.observe(element);
-});
-
-elementsRight.forEach(element => {
-observer.observe(element);
-});
-});
 function circlemoving() {
     var xscale = 1;
     var yscale = 1;
