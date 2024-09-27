@@ -6,6 +6,10 @@
   }
   .a,nav a,button,h2{
     font-family: "Ovo", serif;
+}
+h2{
+    font-family: "Rubik", sans-serif;
+    font-family: "Ovo", serif;
   }
 
 /* circle is for the curser moving animation */
@@ -71,15 +75,16 @@
   
 }
 
-.animation-left.visible,
+/* .animation-left.visible,
 .animation-right.visible {
     opacity: 1;
     transform: translateX(0);
-}
+    animation-delay: 1s;
+} */
 
 .animation-right {
     transform: translateX(1000px);
- 
+    animation-delay: 1s;
 }
 
 
@@ -87,8 +92,10 @@
 .animation-left,
 .animation-right {
     opacity: 0;
-    transition: opacity 1s, transform .3s
+    transition: opacity 1s, transform .8s
 }
+
+
 body{
     overflow-x: hidden;
 }
@@ -168,6 +175,57 @@ margin-top: 100px;
 }
 .contact-container h1{
     font-size: 45px;
-    color: #616161;
+    color: #9e5a1b;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    background: rgba(194, 103, 17, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #555, #e24b06, #ffffff);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+body {
+    cursor: url('https://elianajade.com/assets/dev-icon-C0vQYVIH.png'), auto;
+}
+
+.animation-top {
+    transform: translateY(-100px); 
+}
+
+/* .animation-top.visible,
+.animation-bottom.visible {
+    opacity: 1;
+    transform: translateY(0);
+ 
+} */
+
+.animation-bottom {
+    transform: translateY(100px);
+
+}
+
+.animation-top,
+.animation-bottom {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
